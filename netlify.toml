@@ -1,6 +1,6 @@
 [build]
   command = "ng build --prod"
-  publish = "dist/your-project-name/browser"
+  publish = "dist/cs701_project_bubencik/browser"
 
 [[plugins]]
   package = "@netlify/angular-runtime"

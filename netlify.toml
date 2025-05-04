@@ -2,3 +2,8 @@
   command = "ng build"
   publish = "dist/cs701_project_bubencik/browser"
 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = true

@@ -1,0 +1,7 @@
+a::after{
+    content: "\2192";
+}
+
+div{
+    text-align: center;
+}

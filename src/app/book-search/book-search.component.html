@@ -1,0 +1,20 @@
+<div>
+    <h1>Search For Books</h1>
+    <input type="text" [(ngModel)]="query" placeholder="Search for books">
+    <button (click)="search()">Search</button>
+
+    <table *ngIf="books.length">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author(s)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books">
+                <td><a [routerLink]="['/book', book.key.split('/').pop()]" routerLinkActive="router-link-active"> {{ book.title }}</a> </td>
+                <td>{{book.author_name | authorName}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

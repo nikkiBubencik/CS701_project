@@ -1,0 +1,20 @@
+table th, table td{
+    text-align: left;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+}
+table tr:nth-child(even) {
+    background-color: #D7CCC8;
+}
+table tr:nth-child(odd) {
+    background-color: #FAF3E0;
+}
+table thead tr{
+    background-color: #D7CCC8;
+}

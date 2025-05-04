@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #8D6E63;
+}
+
+header a {
+    text-decoration: none;
+    color: #FAF3E0;
+}
+
+nav {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+nav a:hover {
+    padding: 5px;
+    /* border: 1px solid black; */
+    background-color: #795548;
+    border-radius: 5px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}

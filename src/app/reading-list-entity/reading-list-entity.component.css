@@ -1,0 +1,26 @@
+div{
+    text-align: center;
+}
+.manage-list-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+.trash::after {
+    content: "\1F5D1";
+    font-size: 18px;
+}
+.trash-button{
+    all: unset;
+}
+
+table tr:nth-child(even) {
+    background-color: #D7CCC8;
+}
+table tr:nth-child(odd) {
+    background-color: #FAF3E0;
+}
+table thead tr{
+    background-color: #D7CCC8;
+}

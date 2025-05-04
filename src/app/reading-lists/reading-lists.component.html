@@ -1,0 +1,12 @@
+<div>
+    <h1>Your Reading Lists</h1>
+    <input type="text" #listSearch placeholder="Search for List"
+        (input)="search(listSearch.value)"/>
+    <ul>
+        <li *ngFor="let list of lists">
+            <a [routerLink]="['/readingList', encode(list)]" routerLinkActive="router-link-active" >{{ list }}</a>
+        </li>
+    </ul>
+    <a [routerLink]="['/add']" routerLinkActive="router-link-active" >Add New List</a>
+</div>
+    

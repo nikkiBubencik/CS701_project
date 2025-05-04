@@ -1,0 +1,28 @@
+<div *ngIf="book; else invalid" class="main-container">
+    <img
+        *ngIf="book.covers && book.covers.length > 0"
+        [src]="'https://covers.openlibrary.org/b/id/' + book.covers[0] + '-M.jpg'"
+        alt="{{ book.title }}">
+    <div class="info-container">
+        <h1>{{book.title}}</h1>
+        <div class="author-container">
+            <h2>Author(s):</h2>
+            <ul>
+                <li *ngFor="let author of authorNames">{{author}}</li>
+            </ul>
+        </div>
+        <p>{{book.description }}</p>
+        <button (click)="addToListToggle()">Add To Reading List</button>
+        <div *ngIf="addToList">
+            <select #listNameSelect name="listName" id="listName">
+                <option *ngFor="let list of lists" [value]="list" >{{list}}</option>
+            </select>
+            <button (click)="submitAddToList(listNameSelect.value)">Add</button>
+        </div>
+    </div>
+    <review-component [bookKey]="book.key"></review-component>
+</div>
+
+<ng-template #invalid>
+    <p>The book you are looking for is inavlid</p>
+</ng-template>

@@ -1,0 +1,34 @@
+<div>
+	<h1>{{listName}}</h1>
+	<p>{{description}}</p>
+	<div class="manage-list-buttons">
+		<button (click)="deleteList()">Delete List</button>
+		<button (click)="editList()">Edit Description</button>
+	</div>
+	<table *ngIf="books.length; else noBooks">
+		<thead>
+			<tr>
+			    <th>Delete</th>
+				<th>Title</th>
+				<th>Author</th>
+				<th>Status</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let book of books">
+				<td><button class="trash-button" (click)="delete(book.book.key, book.book.title)"><span class="trash"></span></button></td>
+                <td><a [routerLink]="['/book', book.book.key.split('/').pop()]" routerLinkActive="router-link-active" >{{book.book.title}}</a></td>
+				<td>{{book.authorNames | authorName }}</td>
+				<td>
+                    <select name="status" id="status"  [(ngModel)]="book.status" (ngModelChange)="updateStatus(book.book.key, $event)">
+	                    <option *ngFor="let statusOption of statusOptions"  [value]="statusOption">{{statusOption}}</option>
+                    </select>
+                </td>
+			</tr>
+		</tbody>
+    </table>
+    <ng-template #noBooks>
+        <p>List is currently empty</p>
+        <a [routerLink]="['/search']" routerLinkActive="router-link-active" >Search For Books</a><br>
+    </ng-template>
+</div>

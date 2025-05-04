@@ -1,0 +1,9 @@
+<h3>Add Review</h3>
+<label for="rating">Rate on a scale from 0 to 5: </label>
+<input type="range" id="rating" [(ngModel)]="rate" name="rating" min="0" max="5">
+<input type="number" id="ratingNum" [(ngModel)]="rate" name="ratingNum" min="0" max="5">
+<br>
+<label for="comment">Any Comments?</label><br>
+<textarea [(ngModel)]="comments" name="comment" id="comment" rows="4" cols="50"></textarea>
+<br>
+<button (click)="submitReview()">Submit</button>

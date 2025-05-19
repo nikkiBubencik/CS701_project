@@ -1,20 +1,46 @@
 # Reading List Management System
 
 ## Project Overview
-### Project Overview
-The Reading List Management System is a user-friendly Angular web application that helps users manage and track their reading habits. 
+A full-featured Angular web application for organizing, tracking, and reviewing your personal reading lists. Built with Angular, the Open Library API, and localStorage, this project showcases key front-end development skills such as API integration, routing, reusable components, and responsive UI.
 
 ### Key features:
 
-- Creating and managing multiple custom reading lists
+- **Multiple Reading Lists:** Create and manage custom lists with descriptions
 
-- Tracking reading progress with status options: Not Read, Reading, and Completed
+- **Book Search:** Search the Open Library API for books by title or keyword
 
-- Searching for books using real-time data from the Open Library API
+- **Book Details:** View rich metadata including title, authors, cover image, and description
 
-- Viewing detailed book information including title, authors, cover, and description
+- **User Reviews:** Leave personal ratings (0–5) and written reviews
 
-- Leaving and viewing their ratings and written reviews for books
+- **Reading Status Tracking:** Set reading status to Not Read, Reading, or Completed
+
+- **List Management:** Edit list descriptions, delete lists, and remove books from lists
+
+## Tech Stack
+
+- Angular (Routing, Components, Services, Pipes)
+
+- LocalStorage
+
+- HTML
+
+- CSS
+
+- Open Library API
+
+## What I Learned
+
+- Building and routing complex Angular applications
+
+- Creating reusable components and custom pipes
+
+- Managing persistent state with localStorage
+
+- Integrating and handling data from external APIs (Open Library)
+  
+- Improving UI/UX with dynamic components and form validation
+
 
 ## To Run it in Development Mode
 
@@ -66,25 +92,3 @@ Click on the Book title to navigate to the book detail page
 
 - Clicking the book title will bring you back to the book detail page
 
-## Built With
-
-- Angular
-
-- LocalStorage
-
-- HTML
-
-- CSS
-
-- Open Library API
-
-## What I Learned
-Throughout this project, I gained experience in:
-
-- Implementing Angular routing for smooth navigation between components
-
-- Creating and using Angular services for managing data and API integration
-
-- Building reusable components and custom pipes for cleaner code
-
-- Managing client-side state using LocalStorage

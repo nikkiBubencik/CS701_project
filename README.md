@@ -62,7 +62,7 @@ Then start the development server:
 
 - Once on the Search page type in your search in the input box and click submit
 
-Click on the Book title to navigate to the book detail page
+- Click on the Book title to navigate to the book detail page
 
 ### Seeing book Details
 

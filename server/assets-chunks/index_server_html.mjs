@@ -3,7 +3,7 @@ export default `<!doctype html>
 <head>
   <meta charset="utf-8">
   <title>Cs701ProjectBubencik</title>
-  <base href="https://github.com/nikkiBubencik/CS701_project">
+  <base href="https://github.com/nikkiBubencik/CS701_project/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="styles-DC7VQKHW.css"></head>

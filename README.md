@@ -5,6 +5,8 @@ CS 701 Term Project
 
 A full-featured Angular web application for organizing, tracking, and reviewing your personal reading lists. Built with Angular, the Open Library API, and localStorage, this project showcases key front-end development skills such as API integration, routing, reusable components, and responsive UI.
 
+[Live Link](https://nikkibubencik.github.io/CS701_project/)
+
 ### Key features:
 
 - **Multiple Reading Lists:** Create and manage custom lists with descriptions

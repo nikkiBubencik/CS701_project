@@ -1,8 +1,0 @@
-{
-  "routes": {
-    "/CS701_project": {},
-    "/CS701_project/add": {},
-    "/CS701_project/readingLists": {},
-    "/CS701_project/search": {}
-  }
-}

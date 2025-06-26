@@ -1,6 +1,6 @@
 
 export default {
-  basePath: 'https://github.com/nikkiBubencik/CS701_project',
+  basePath: '/CS701_project',
   supportedLocales: {
   "en-US": ""
 },

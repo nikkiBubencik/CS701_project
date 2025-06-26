@@ -2,50 +2,50 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: 'https://github.com/nikkiBubencik/CS701_project/',
+  baseHref: '/CS701_project/',
   locale: undefined,
   routes: [
   {
     "renderMode": 2,
-    "route": "/nikkiBubencik/CS701_project"
+    "route": "/CS701_project"
   },
   {
     "renderMode": 2,
-    "route": "/nikkiBubencik/CS701_project/search"
+    "route": "/CS701_project/search"
   },
   {
     "renderMode": 2,
-    "route": "/nikkiBubencik/CS701_project/readingLists"
+    "route": "/CS701_project/readingLists"
   },
   {
     "renderMode": 1,
-    "route": "/nikkiBubencik/CS701_project/readingList/*"
+    "route": "/CS701_project/readingList/*"
   },
   {
     "renderMode": 1,
-    "route": "/nikkiBubencik/CS701_project/book/*"
+    "route": "/CS701_project/book/*"
   },
   {
     "renderMode": 2,
-    "route": "/nikkiBubencik/CS701_project/add"
+    "route": "/CS701_project/add"
   },
   {
     "renderMode": 1,
-    "route": "/nikkiBubencik/CS701_project/edit/*"
+    "route": "/CS701_project/edit/*"
   },
   {
     "renderMode": 1,
-    "route": "/nikkiBubencik/CS701_project/**"
+    "route": "/CS701_project/**"
   }
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 734, hash: 'a5514b531dc0d83afc0b9f97ed69468d471e8f10d293d19beb39f94f72000273', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 1063, hash: '6ea452d2fe27015179bf0dcd2da6cb6a1a60bb40719ca573c5941b545f6707ff', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'search/index.html': {size: 3938, hash: '9d15eb4d26d6ccaad4e96a5fd69fd66ae697c1d6b92aa6a10cd305bf8f00ba0f', text: () => import('./assets-chunks/search_index_html.mjs').then(m => m.default)},
-    'index.html': {size: 3597, hash: '912420e169e9e57d6839198bf990ae498cf1569a69cbbf11c45ccd9241f10e8b', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
-    'readingLists/index.html': {size: 3468, hash: 'de4f15de74aaf23ce2060944785e8816f05d8e92b8a90e3af5a676eaa2aa72d5', text: () => import('./assets-chunks/readingLists_index_html.mjs').then(m => m.default)},
-    'add/index.html': {size: 3474, hash: '10944b622e0a2c8a6057a3ec6e9247e28fffd87abb5b19e060258ebe3ca9f76a', text: () => import('./assets-chunks/add_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 702, hash: 'a8b4b4780f829d6d6133cb5b1a8b52132c29478d1cdfcb2ea1c3659fbd8f85d8', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 1031, hash: 'f5c2bc42be0f665b334c8fa3afbfc92dde26c2a9649f760165617c077d207036', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'index.html': {size: 3405, hash: 'c02bba9564f4e2eef1f706a5c758eac6ca3a5d447ea04486af2c7870181c5be9', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'search/index.html': {size: 3810, hash: '6c70e77f7b4ea5f6fc8bc31359ac3330c9cd3950c5211c2c6a9aec6893453f33', text: () => import('./assets-chunks/search_index_html.mjs').then(m => m.default)},
+    'readingLists/index.html': {size: 3308, hash: 'f299ad48a4edd59da940357d47ebab56f65e4dd00605e5cdfab841a4719892ac', text: () => import('./assets-chunks/readingLists_index_html.mjs').then(m => m.default)},
+    'add/index.html': {size: 3346, hash: '568112143c6fb3ede2a6bafca215cb49e42217c905ea24d8aa589fcc8f92c3cd', text: () => import('./assets-chunks/add_index_html.mjs').then(m => m.default)},
     'styles-DC7VQKHW.css': {size: 75, hash: 'Nqj9yR3pnd8', text: () => import('./assets-chunks/styles-DC7VQKHW_css.mjs').then(m => m.default)}
   },
 };

@@ -1,8 +1,8 @@
 {
   "routes": {
-    "/nikkiBubencik/CS701_project": {},
-    "/nikkiBubencik/CS701_project/add": {},
-    "/nikkiBubencik/CS701_project/readingLists": {},
-    "/nikkiBubencik/CS701_project/search": {}
+    "/CS701_project": {},
+    "/CS701_project/add": {},
+    "/CS701_project/readingLists": {},
+    "/CS701_project/search": {}
   }
 }
